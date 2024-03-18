@@ -15,7 +15,7 @@ def scrape_university_reviews(university_name):
     headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36'}
     
     
-    page_num = 1
+    page_num = 41135
     while True:
         url = base_url.format(page_num)
         response = requests.get(url, headers=headers)

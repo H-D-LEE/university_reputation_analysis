@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Mar  4 16:21:29 2024
+Created on Mon Mar  4 16:23:56 2024
 
 @author: USER
 """
-
 import time
 import requests
 from bs4 import BeautifulSoup
 import sqlite3
 
 def scrape_university_reviews(university_name):
-    base_url = 'https://gall.dcinside.com/board/view/?id=suwon&no={}'  # {}에는 게시물 번호가 들어갈 자리입니다.
+    base_url = 'https://gall.dcinside.com/board/view/?id=anyang_university&no={}'  # {}에는 게시물 번호가 들어갈 자리입니다.
     headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36'}
     
     
-    page_num = 1
+    page_num = 23800
     while True:
         url = base_url.format(page_num)
         response = requests.get(url, headers=headers)
@@ -32,13 +31,12 @@ def scrape_university_reviews(university_name):
 
         page_num += 1
         #print(page_num)
-        if page_num == 131505 :
+        if page_num == 23801 :
             break
         time.sleep(3)  # 3초 대기 후 다음 페이지로 이동합니다.
-        
-        
+
 def save_to_database(university_name, soup):
-    conn = sqlite3.connect('university_reviews_suwon.db')
+    conn = sqlite3.connect('university_reviews_anyang.db')
     cursor = conn.cursor()
 
     cursor.execute('''CREATE TABLE IF NOT EXISTS university_reviews (university_name TEXT, review_title TEXT, review_content TEXT, date TEXT)''')
