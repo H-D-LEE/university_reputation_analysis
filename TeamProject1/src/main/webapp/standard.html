@@ -99,16 +99,17 @@
 		            <a class="nav-link active" aria-current="page" id="standardPageLink" href="http://localhost:8088/TeamProject1/standard.html">평가 기준</a>
 		          </li>
 		          <li class="nav-item">
-		            <a class="nav-link" id="pagelinkPageLink" href="http://localhost:8088/TeamProject1/pagelink.html">평가 출처 사이트</a>
+		            <a class="nav-link" id="pagelinkPageLink" href="http://localhost:8088/TeamProject1/pagelink.html">평가 대상 목록</a>
 		          </li>
 		          <li class="nav-item dropdown">
 		            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 		              학교 평판 순위
 		            </a>
 		            <ul class="dropdown-menu">
-		              <li><a class="dropdown-item" id="rankPageLink1" href="http://localhost:8088/TeamProject1/rank.html">입결 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink2" href="http://localhost:8088/TeamProject1/rank.html">재학생 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink3" href="http://localhost:8088/TeamProject1/rank.html">취업 평판 순위</a></li>
+		              <li><a class="dropdown-item" id="rankPageLink1" href="http://localhost:8088/TeamProject1/rank.html">교수 평판 순위</a></li>
+	              <li><a class="dropdown-item" id="rankPageLink2" href="http://localhost:8088/TeamProject1/rank.html">수업 평판 순위</a></li>
+	              <li><a class="dropdown-item" id="rankPageLink3" href="http://localhost:8088/TeamProject1/rank.html">등록금 평판 순위</a></li>
+	              <li><a class="dropdown-item" id="rankPageLink3" href="http://localhost:8088/TeamProject1/rank.html">장학금 평판 순위</a></li>
 		            </ul>
 		          </li>
 		        </ul>
@@ -121,57 +122,68 @@
     <div class="container" style="height: 60px;">
         <!-- Content here -->
     </div>
-
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>입결 평판 순위</h1>
-                <p>수험생들을 위한 입결 평판 기준 학교 순위</p>
-                <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>재학생 평판 순위</h1>
-                <p>학부생들을 위한 재학생 평판 기준 학교 순위</p>
-                <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>취업 평판 순위</h1>
-                <p>졸업생들을 위한 취업 평판 기준 학교 순위</p>
-                <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
-              </div>
-            </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>교수 평판 순위</h1>
+            <p>대학 교수를 평가기준으로 한 학교 순위</p>
+            <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>수업 평판 순위</h1>
+            <p>대학 수업을 평가기준으로 한 학교 순위</p>
+            <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>등록금 평판 순위</h1>
+            <p>대학교 등록금을 평가기준으로 한 학교 순위</p>
+            <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>장학금 평판 순위</h1>
+            <p>대학교 장학금을 평가기준으로 한 학교 순위</p>
+            <p><a class="btn btn-lg btn-primary" href="http://localhost:8088/TeamProject1/rank.html">보러가기</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
       <div class="container" style="height: 60px;">
         <!-- Content here -->
