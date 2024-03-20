@@ -99,16 +99,17 @@
 		            <a class="nav-link active" aria-current="page" id="standardPageLink" href="http://localhost:8088/TeamProject1/standard.html">평가 기준</a>
 		          </li>
 		          <li class="nav-item">
-		            <a class="nav-link" id="pagelinkPageLink" href="http://localhost:8088/TeamProject1/pagelink.html">평가 출처 사이트</a>
+		            <a class="nav-link" id="pagelinkPageLink" href="http://localhost:8088/TeamProject1/pagelink.html">평가 대상 목록</a>
 		          </li>
 		          <li class="nav-item dropdown">
 		            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 		              학교 평판 순위
 		            </a>
 		            <ul class="dropdown-menu">
-		              <li><a class="dropdown-item" id="rankPageLink1" href="http://localhost:8088/TeamProject1/rank.html">입결 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink2" href="http://localhost:8088/TeamProject1/rank.html">재학생 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink3" href="http://localhost:8088/TeamProject1/rank.html">취업 평판 순위</a></li>
+		              	<li><a class="dropdown-item" id="rankPageLink1" href="http://localhost:8088/TeamProject1/rank.html">교수 평판 순위</a></li>
+	              		<li><a class="dropdown-item" id="rankPageLink2" href="http://localhost:8088/TeamProject1/rank.html">수업 평판 순위</a></li>
+	             		<li><a class="dropdown-item" id="rankPageLink3" href="http://localhost:8088/TeamProject1/rank.html">등록금 평판 순위</a></li>
+	              		<li><a class="dropdown-item" id="rankPageLink3" href="http://localhost:8088/TeamProject1/rank.html">장학금 평판 순위</a></li>
 		            </ul>
 		          </li>
 		        </ul>
@@ -122,7 +123,7 @@
         <!-- Content here -->
     </div>
     <div class="container" style="height: 60px;">
-        <h2 class="featurette-heading fw-normal lh-1"> 기준별 평판 순위 <span class="text-muted"></span></h2>
+        <h2 class="featurette-heading fw-normal lh-1"> 교수 기준 평판 순위 <span class="text-muted"></span></h2>
         <p class="featurette-heading fw-normal lh-1"><span class="text-muted">평판 기준에 대한 설명</span></p>
     </div>
 
@@ -134,72 +135,62 @@
 
     <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+    
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">1. 1위대학교 <span class="text-muted"></span></h2>
-        <p class="lead">해당 학교의 상세 설명</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    <div class="container" style="height: 50px;">
+      <!-- Content here -->
+    </div>
 
-      </div>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">학교명</th>
+          <th scope="col">교수 평판 지수</th>
+          <th scope="col">총 평판 지수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>한국공학대학교</td>
+          <td>54321</td>
+          <td>98765</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>안양대학교</td>
+          <td>43215</td>
+          <td>87654</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>수원대학교</td>
+          <td>32154</td>
+          <td>76543</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>강남대학교</td>
+          <td>21543</td>
+          <td>65432</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>금오공과대학교</td>
+          <td>12345</td>
+          <td>54321</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="container" style="height: 30px;">
+      <!-- Content here -->
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">2. 2위대학교 <span class="text-muted"></span></h2>
-        <p class="lead">해당 학교의 상세 설명</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">3. 3위대학교 <span class="text-muted"></span></h2>
-        <p class="lead">해당 학교의 상세 설명</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">4. 4위대학교 <span class="text-muted"></span></h2>
-          <p class="lead">해당 학교의 상세 설명</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
-        </div>
-      </div>
-  
-      <hr class="featurette-divider">
-  
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">5. 5위대학교 <span class="text-muted"></span></h2>
-          <p class="lead">해당 학교의 상세 설명</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
-        </div>
-      </div>
-
-    <hr class="featurette-divider">
+    
 
     <!-- /END THE FEATURETTES -->
 
