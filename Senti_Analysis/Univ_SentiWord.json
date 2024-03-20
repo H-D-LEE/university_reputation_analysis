@@ -1385,5 +1385,10 @@
         "word": "튼튼하다",
         "word_root": "튼튼하",
         "polarity": "1"
+    },
+    {
+        "word": "의문",
+        "word_root": "의문",
+        "polarity": "-1"
     }
 ]
