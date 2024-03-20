@@ -1,5 +1,5 @@
 // 페이지 URL 정의
-const mainPageUrl = "./main.html";
+const mainPageUrl = "./index.html";
 const rankPageUrl1 = "./rank.html";
 const rankPageUrl2 = "./rankcls.html"
 const rankPageUrl3 = "./rankfee.html"
