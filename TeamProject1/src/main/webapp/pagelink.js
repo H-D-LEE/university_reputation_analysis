@@ -1,5 +1,5 @@
 // 페이지 URL 정의
-const pagelinkPageUrl = "http://localhost:8088/TeamProject1/pagelink.html";
+const pagelinkPageUrl = "./pagelink.html";
 
 // 페이지링크 페이지 연결 함수 정의
 function linkPagelinkPage() {

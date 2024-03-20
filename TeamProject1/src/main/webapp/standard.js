@@ -1,5 +1,9 @@
 // 페이지 URL 정의
-const standardPageUrl = "http://localhost:8088/TeamProject1/standard.html";
+const standardPageUrl = "./standard.html";
+const rankPageUrl1 = "./rank.html";
+const rankPageUrl2 = "./rankcls.html";
+const rankPageUrl3 = "./rankfee.html";
+const rankPageUrl4 = "./rankmny.html";
 
 // 평가기준 페이지 연결 함수 정의
 function linkStandardPage() {
@@ -7,17 +11,52 @@ function linkStandardPage() {
     standardPageLink.href = standardPageUrl;
 }
 
-function goToRankPage() {
-    window.location.href = "http://localhost:8088/TeamProject1/rank.html";
+// 페이지링크 페이지 연결 함수 정의
+function linkRankPage() {
+    const rankPageLink = document.getElementById("rankPageLink1");
+    rankPageLink.href = rankPageUrl1;
 }
 
-// "보러가기" 버튼에 클릭 이벤트 추가
+function linkRankClsPage() {
+    const rankClsPageLink = document.getElementById("rankPageLink2");
+    rankClsPageLink.href = rankPageUrl2;
+}
+
+function linkRankFeePage() {
+    const rankFeePageLink = document.getElementById("rankPageLink3");
+    rankFeePageLink.href = rankPageUrl3;
+}
+
+function linkRankMnyPage() {
+    const rankMnyPageLink = document.getElementById("rankPageLink4");
+    rankMnyPageLink.href = rankPageUrl4;
+}
+
+// 보러가기 버튼 클릭 이벤트 핸들러 추가
 document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".btn-lg");
-    buttons.forEach(button => {
-        if (button.innerText === "보러가기") {
-            button.addEventListener("click", goToRankPage);
-        }
+    const rankPageLink = document.getElementById("rankPageLink1");
+    const rankClsPageLink = document.getElementById("rankPageLink2");
+    const rankFeePageLink = document.getElementById("rankPageLink3");
+    const rankMnyPageLink = document.getElementById("rankPageLink4");
+
+    rankPageLink.addEventListener("click", function(event) {
+        event.preventDefault(); // 기본 동작 방지
+        window.location.href = rankPageUrl1;
+    });
+
+    rankClsPageLink.addEventListener("click", function(event) {
+        event.preventDefault(); // 기본 동작 방지
+        window.location.href = rankPageUrl2;
+    });
+
+    rankFeePageLink.addEventListener("click", function(event) {
+        event.preventDefault(); // 기본 동작 방지
+        window.location.href = rankPageUrl3;
+    });
+
+    rankMnyPageLink.addEventListener("click", function(event) {
+        event.preventDefault(); // 기본 동작 방지
+        window.location.href = rankPageUrl4;
     });
 });
 // 페이지 로드 시 평가기준 페이지 컨트롤러 연결 실행
