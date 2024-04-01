@@ -1,17 +1,20 @@
 import sqlite3
 
-db='Senti_Analysis/senti.db'
+db='Senti_Analysis/senti2.db'
 conn=sqlite3.connect(db)
 c=conn.cursor()
 
-""" test 테이블 생성
+""" test 테이블 생성""" 
 
-c.execute('''CREATE TABLE test
-            (id INTEGER PRIMARY KEY, name TEXT)''')
+c.execute('''CREATE TABLE 진로
+            (university_name TEXT,
+                review_content TEXT,
+                date TEXT,
+                result TEXT)''')
 conn.commit()
 conn.close()
 
-"""
+
 
 """ test 테이블에서 데이터 삽입, 조회
 name='A'

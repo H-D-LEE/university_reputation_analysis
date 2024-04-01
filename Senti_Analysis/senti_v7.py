@@ -2,8 +2,20 @@ import senti_module as st
 import db_con as db
 
 senti_dic = 'Senti_Analysis/Univ_SentiWord.json'
-scrap_db = 'Senti_Analysis/university_reviews_combined.db'
-senti_db = 'Senti_Analysis/senti.db'
+scrap_db = 'Senti_Analysis/university_reviews_combines.db'
+senti_db = 'Senti_Analysis/senti2.db'
+
+def pn_classificate(polarity):
+    if polarity <-5:
+        return '매우 부정'
+    elif -5<=polarity<-1:
+        return '부정'
+    elif -1<=polarity<=1:
+        return '중립'
+    elif 1<polarity<=5:
+        return '긍정'
+    else:
+        return '매우 긍정'
 
 if __name__ == "__main__":
     
@@ -37,7 +49,7 @@ if __name__ == "__main__":
                 for i in range(len(result)):
                     cum_polarity+=list(result.values())[i]
                 print(f"문장: {txt}")
-                print(f'문장 극성 합계: {cum_polarity}')
-                db.db_insert(senti_conn, keyword, univ_name, row[0], row[1], cum_polarity)
+                print(f'문장 극성 합계: {cum_polarity} - 문장 긍부정 결과 : {pn_classificate(cum_polarity)}')
+                db.db_insert(senti_conn, keyword, univ_name, row[0], row[1], pn_classificate(cum_polarity))
     db.db_close(scrap_conn)
     db.db_close(senti_conn)
