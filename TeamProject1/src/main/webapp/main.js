@@ -1,5 +1,5 @@
 // 페이지 URL 정의
-const mainPageUrl = "http://localhost:8088/TeamProject1/main.html";
+const mainPageUrl = "./main.html";
 
 // 메인 페이지 연결 함수 정의
 function linkMainPage() {
