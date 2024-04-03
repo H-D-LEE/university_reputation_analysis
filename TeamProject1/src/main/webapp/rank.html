@@ -131,10 +131,13 @@
 			              학교 평판 순위
 			            </a>
 			            <ul class="dropdown-menu">
-			          <li><a class="dropdown-item" id="rankPageLink1" href="./rank.html">교수 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink2" href="./rankcls.html">수업 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink3" href="./rankfee.html">등록금 평판 순위</a></li>
-		              <li><a class="dropdown-item" id="rankPageLink4" href="./rankmny.html">장학금 평판 순위</a></li>
+			        		<li><a class="dropdown-item" id="rankPageLink1" href="./rank.html">교수 평판 순위</a></li>
+	              			<li><a class="dropdown-item" id="rankPageLink2" href="./rankcls.html">교과 평판 순위</a></li>
+	              			<li><a class="dropdown-item" id="rankPageLink3" href="./rankfee.html">등록금 평판 순위</a></li>
+	              			<li><a class="dropdown-item" id="rankPageLink4" href="./rankmny.html">복지 평판 순위</a></li>
+	              			<li><a class="dropdown-item" id="rankPageLink5" href="./rankncl.html">비교과 평판 순위</a></li>
+	              			<li><a class="dropdown-item" id="rankPageLink6" href="./rankbld.html">시설 평판 순위</a></li>
+	              			<li><a class="dropdown-item" id="rankPageLink7" href="./rankemp.html">진로 평판 순위</a></li>
 			            </ul>
 			          </li>
 			        </ul>
@@ -232,10 +235,34 @@
     </div>
     
     <canvas id="proChart" width="400" height="400"></canvas>
+    	
+	 <div class="container" style="height: 80px;">
+      <!-- Content here -->
+    </div>
+    
+    <hr class="featurette-divider">
+    
+    <div class="container" style="height: 50px;">
+        <!-- Content here -->
+    </div>
+    <div class="container" style="height: 60px;">
+        <h2 class="featurette-heading fw-normal lh-1"> 대학별 긍부정 평가 총합 <span class="text-muted"></span></h2>
+    </div>
+
+    <div class="container" style="height: 50px;">
+        <!-- Content here -->
+    </div>
+    
+    <div class="container" style="height: 30px;">
+      <!-- Content here -->
+    </div>
+    
+    <canvas id="proChart2" width="400" height="400"></canvas>
     <script>
 		var proChart = document.getElementById('proChart').getContext('2d');
+		var proChart2 = document.getElementById('proChart2').getContext('2d');
 		
-		var Chart = new Chart(proChart,{
+		var lineChart = new Chart(proChart,{
 			type : 'line', 
 			data : {
 				labels : ['2019','2020', '2021', '2022', '2023', '2024' ],
@@ -258,6 +285,33 @@
 				{
 					label : '삼육대학교', 
 					data : [60, 90, 110, 220, 310, 420]
+				}]
+			}
+		});
+		
+		var barChart = new Chart(proChart2,{
+			type : 'bar', 
+			data : {
+				labels : ['한국공학대학교','안양대학교', '수원대학교', '금오공과대학교', '삼육대학교' ],
+				datasets : [{
+					label : '매우 부정', 
+					data : [10, 8, 9, 11, 7]
+				},
+				{
+					label : '부정', 
+					data : [12, 10, 9, 15, 17]
+				},
+				{
+					label : '중립', 
+					data : [20, 20, 22, 18, 24]
+				},
+				{
+					label : '긍정', 
+					data : [15, 11, 12, 8, 13]
+				},
+				{
+					label : '매우 긍정', 
+					data : [18, 17, 9, 11, 14]
 				}]
 			}
 		});
