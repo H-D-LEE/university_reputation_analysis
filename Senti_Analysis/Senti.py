@@ -16,3 +16,4 @@ class Senti():
         pol = result[1]	
             
         return word, pol
+    

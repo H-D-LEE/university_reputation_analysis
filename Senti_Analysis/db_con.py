@@ -20,10 +20,10 @@ def db_fetch(conn, keyword, univ_name, num):
         print("db fetch 오류:", e)
         return None
 
-def db_fetch_non_limit(conn, keyword):
+def db_fetch_non_limit(conn, keyword, start_count):
     try:
         cursor = conn.cursor()
-        query = f"SELECT * FROM {keyword} ORDER BY date DESC"
+        query = f"SELECT * FROM {keyword} ORDER BY date DESC limit (select count(*) from {keyword}) offset {start_count}"
         cursor.execute(query)
         rows = cursor.fetchall()
         return rows
