@@ -131,9 +131,17 @@
         <!-- Content here -->
     </div>
 
-    <div class="container" style="height: 60px;">
+    <div class="container" style="height: 150px;">
         <h2 class="featurette-heading fw-normal lh-1"> 평가 기준 <span class="text-muted"></span></h2>
-        <p class="featurette-heading fw-normal lh-1"><span class="text-muted">평판 수집에 대한 설명 & 프로젝트에 대한 설명</span></p>
+        <p class="lead"><span class="text-muted">
+			저희 프로젝트는 각종 온라인 커뮤니티에 올라오는 대학교의 평판을 수집하여 
+			글의 긍·부정 평가를 분석하고 해당 대학교의 평판 지수를 계산해 이를 수치화시켜 
+			유저분들께 보여드리는 프로젝트입니다. 
+			따라서 각종 커뮤니티의 게시글들을 스크래핑하고, 
+			스크래핑한 게시글의 내용을 저희 팀의 감정 분석 모듈을 통해 
+			대학에 대한 긍·부정 평판을 수치화하는 과정을 거칩니다. 
+			좀 더 자세한 설명을 위해 분석 과정을 보여드리도록 하겠습니다.			
+		</span></p>
     </div>
 
     <div class="container" style="height: 50px;">
@@ -146,70 +154,43 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">개발 과정1 <span class="text-muted"></span></h2>
-        <p class="lead">해당 과정의 상세 설명</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+    <div class="container">
+      
+        <h2 class="featurette-heading fw-normal lh-1">1. 스크래핑 <span class="text-muted"></span></h2>
+        <p class="lead">
+			저희 팀의 목표는 광고나 악의적 평가 등으로 정확도가 떨어지는 대학의 평판보다 
+			실제로 사람들이 생각하는 대학의 평판을 수치화하여 보여드리는 것을 목표로 이번 프로젝트를 진행했습니다. 
+			따라서 저희의 목표에 맞게 보통 사람들의 의견을 모으기 위해선 커뮤니티에 올라오는 게시글들을 수집할 필요가 있습니다.</p>
+        <p class="lead">
+			이에 저희 팀은 python으로 각종 커뮤니티의 게시글들을 스크래핑 하고 있습니다. 
+			아래 검색창에 학교명을 입력하고 검색 버튼을 누르면 해당 학교에 대하여 스크래핑 된 게시글들의 목록을 확인해 볼 수 있습니다.</p>
+		<form class="d-flex" role="search">
+      		<input class="form-control me-2" type="search" placeholder="학교명을 입력하시오." aria-label="Search">
+      		<button class="btn btn-outline-success" type="submit">Search</button>
+    	</form>
+     	<p class="lead">　</p>
+        <p class="lead">(스크래핑 모듈 삽입)</p>
+        <p class="lead">　</p>
+      
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="container">
 
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">개발 과정2 <span class="text-muted"></span></h2>
-        <p class="lead">해당 과정의 상세 설명</p>
+      
+        <h2 class="featurette-heading fw-normal lh-1">2. 감정 분석 모듈 <span class="text-muted"></span></h2>
+        <p class="lead">위에서 설명해 드린 것처럼 스크래핑을 통해 게시글을 긁어모았으니 이제 의견을 뽑아내 긍·부정 여부를 분석할 차례입니다. 저희 팀은 기존 군산 대학교의 감성 사전을 기반으로 게시글들에서 주로 쓰이는, 대학 평판에 직결되는 표현을 직접 수집해 별도의 감성 사전을 구축했습니다. </p>
+        <p class="lead">　</p>
+        <p class="lead">(감정 분석 모듈 삽입)</p>
+        <p class="lead">　</p>
+        <p class="lead">그것이 바로 이 모듈인데요, 다음과 같이 문장을 입력받으면 자동으로 긍·부정 여부를 판단하고 이를 수치화하는 작업에 들어갑니다.</p>
+        <p class="lead">이렇게 산정된 평가 수치를 합산 및 통계를 내는 과정을 통해 최종적으로 웹 페이지에 해당 대학의 긍·부정 평가 수치가 기재되게 됩니다.</p>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+      
+      <div class="container" style="height: 100px;">
+      <!-- Content here -->
       </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">개발 과정3 <span class="text-muted"></span></h2>
-        <p class="lead">해당 과정의 상세 설명</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">개발 과정4 <span class="text-muted"></span></h2>
-          <p class="lead">해당 과정의 상세 설명</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
-        </div>
-      </div>
-  
-      <hr class="featurette-divider">
-  
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">개발 과정5 <span class="text-muted"></span></h2>
-          <p class="lead">해당 과정의 상세 설명</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
-        </div>
-      </div>
-
-    <hr class="featurette-divider">
+      
 
     <!-- /END THE FEATURETTES -->
 
