@@ -42,6 +42,21 @@
         }
       }
 
+      @font-face {
+        font-family: 'GowunBatang-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      } 
+
+      @font-face {
+        font-family: 'GowunDodum-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+
       .b-example-divider {
         height: 3rem;
         background-color: rgba(0, 0, 0, .1);
@@ -78,6 +93,19 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .container {
+        font-family: 'GowunBatang-Regular';
+      }
+
+      .container-fluid{
+        font-family: 'GowunDodum-Regular';
+      }
+
+      .btn-secondary{
+        font-family: 'GowunDodum-Regular';
+      }
+
     </style>
 
     
@@ -86,40 +114,43 @@
   </head>
   <body>
     
-<header>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		    <div class="container-fluid">
-		      <a class="navbar-brand" id="mainPageLink" href="./index.html">대학 평판 사이트</a>
-		      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		        <span class="navbar-toggler-icon"></span>
-		      </button>
-		      <div class="collapse navbar-collapse" id="navbarCollapse">
-		        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-		          <li class="nav-item">
-		            <a class="nav-link active" aria-current="page" id="standardPageLink" href="./standard.html">평가 기준</a>
-		          </li>
-		          <li class="nav-item">
-		            <a class="nav-link" id="pagelinkPageLink" href="./pagelink.html">평가 대상 목록</a>
-		          </li>
-		          <li class="nav-item dropdown">
-		            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		              학교 평판 순위
-		            </a>
-		            <ul class="dropdown-menu">
-		          <li><a class="dropdown-item" id="rankPageLink1" href="./rank.html">교수 평판 순위</a></li>
-	              <li><a class="dropdown-item" id="rankPageLink2" href="./rankcls.html">교과 평판 순위</a></li>
-	              <li><a class="dropdown-item" id="rankPageLink3" href="./rankfee.html">등록금 평판 순위</a></li>
-	              <li><a class="dropdown-item" id="rankPageLink4" href="./rankmny.html">복지 평판 순위</a></li>
-	              <li><a class="dropdown-item" id="rankPageLink5" href="./rankncl.html">비교과 평판 순위</a></li>
-	              <li><a class="dropdown-item" id="rankPageLink6" href="./rankbld.html">시설 평판 순위</a></li>
-	              <li><a class="dropdown-item" id="rankPageLink7" href="./rankemp.html">진로 평판 순위</a></li>
-		            </ul>
-		          </li>
-		        </ul>
-		      </div>
-		    </div>
-		  </nav>
-</header>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="mainPageLink" href="./index.html">대학 평판 사이트</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="standardPageLink" href="./standard.html">평가 기준</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pagelinkPageLink" href="./pagelink.html">평가 대상 목록</a>
+              </li>
+              <li class="nav-item"></li>
+	            <a class="nav-link" id="pagelinkPageLink" href="./data.html">평가 비교</a>
+	          </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  학교 평판 지수
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" id="rankPageLink1" href="./rank.html">교수 평판 지수</a></li>
+                  <li><a class="dropdown-item" id="rankPageLink2" href="./rankcls.html">교과 평판 지수</a></li>
+                  <li><a class="dropdown-item" id="rankPageLink3" href="./rankfee.html">등록금 평판 지수</a></li>
+                  <li><a class="dropdown-item" id="rankPageLink4" href="./rankmny.html">복지 평판 지수</a></li>
+                  <li><a class="dropdown-item" id="rankPageLink5" href="./rankncl.html">비교과 평판 지수</a></li>
+                  <li><a class="dropdown-item" id="rankPageLink6" href="./rankbld.html">시설 평판 지수</a></li>
+                  <li><a class="dropdown-item" id="rankPageLink7" href="./rankemp.html">진로 평판 지수</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 <main>
     <div class="container" style="height: 100px;">
@@ -131,77 +162,80 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-2.4 col-md-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <img src="./image/tukorea.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="한국공대">
+        <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">한국공학대학교</h2>
-        <p>한국공학대학교에 대한 설명</p>
-        <p><a class="btn btn-secondary" href="https://www.tukorea.ac.kr/">학교 홈페이지로 이동 &raquo;</a></p>
+        <div class="container" style="height: 10px;"></div>
+        <p><a class="btn btn-secondary" href="https://www.tukorea.ac.kr/" style="background-color: #1758a8;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="col-lg-2.4 col-md-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <img src="./image/syu.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="삼육대">
+        <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">삼육대학교</h2>
-        <p>강남대학교에 대한 설명</p>
-        <p><a class="btn btn-secondary" href="https://www.syu.ac.kr/">학교 홈페이지로 이동 &raquo;</a></p>
+        <div class="container" style="height: 10px;"></div>
+        <p><a class="btn btn-secondary" href="https://www.syu.ac.kr/" style="background-color: #002855;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="col-lg-2.4 col-md-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <img src="./image/suwon.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="수원대">
+        <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">수원대학교</h2>
-        <p>수원대학교</p>
-        <p><a class="btn btn-secondary" href="https://www.suwon.ac.kr/">학교 홈페이지로 이동 &raquo;</a></p>
+        <div class="container" style="height: 10px;"></div>
+        <p><a class="btn btn-secondary" href="https://www.suwon.ac.kr/" style="background-color: #deab1a;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
       </div><!-- /.col-lg-2.4 col-md-4 -->
+      <div class="container" style="height: 10px;"></div>
       <div class="col-lg-2.4 col-md-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <img src="./image/any.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="안양대">
+        <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">안양대학교</h2>
-        <p>안양대학교</p>
-        <p><a class="btn btn-secondary" href="https://www.anyang.ac.kr/">학교 홈페이지로 이동 &raquo;</a></p>
+        <div class="container" style="height: 10px;"></div>
+        <p><a class="btn btn-secondary" href="https://www.anyang.ac.kr/" style="background-color: #ffd200;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="col-lg-2.4 col-md-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2 class="fw-normal">금오공대학교</h2>
-        <p>금오공대학교에 대한 설명</p>
-        <p><a class="btn btn-secondary" href="https://www.kumoh.ac.kr/">학교 홈페이지로 이동 &raquo;</a></p>
+        <img src="./image/kit.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="금오공대">
+        <div class="container" style="height: 10px;"></div>
+        <h2 class="fw-normal">금오공과대학교</h2>
+        <div class="container" style="height: 10px;"></div>
+        <p><a class="btn btn-secondary" href="https://www.kumoh.ac.kr/" style="background-color: #00a9ce;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
       </div><!-- /.col-lg-2.4 col-md-4 -->
     </div><!-- /.row -->
 
+    <div class="container" style="height: 50px;"></div>
+
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">에브리타임  <a href="https://everytime.kr" class="text-muted">바로가기</a></h2>
-        <p class="lead">주요 사용자층과 같은 해당 SNS에 대한 상세한 설명</p>
+      <div class="col-md-8 order-md-2">
+        <div class="container" style="height: 20px;"></div>
+        <h2 class="featurette-heading fw-normal lh-1">대학백과 <a href="https://www.univ100.kr" target="_blank" class="text-muted">바로가기</a></h2>
+        <div class="container" style="height: 10px;"></div>
+        <p class="lead">대학 백과는 수험생과 대학생의 멘토링을 기반으로 하는 입시 정보 공유 웹서비스로 대학 후기, 합격 후기, 커뮤니티, 질의응답이 주 서비스이다. 
+          익명성이 보장된다는 특징이 있으며 주로 수험생들과 현역 대학생들이 이 웹페이지를 찾는다.</p>
+        <p class="lead">대학 후기와 커뮤니티 란이 있어 자신이 다니는 대학에 대한 생각과 의견을 자유롭게 표현할 수 있다는 점에서 
+          대학 실 이용자들의 의견을 수용하기 적합하다 판단해 데이터 수집 대상이 되었다.</p>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+      <div class="col-md-4 order-md-1">
+        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+        <img src="./image/univ.jpg" class="bd-placeholder-img"  width="300" height="300" aria-hidden="true" alt="대학백과">
       </div>
     </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">디시인사이드 <a href="https://www.dcinside.com" class="text-muted">바로가기</a></h2>
-        <p class="lead">주요 사용자층과 같은 해당 SNS에 대한 상세한 설명</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">대학백과 <a href="https://www.univ100.kr" class="text-muted">바로가기</a></h2>
-        <p class="lead">주요 사용자층과 같은 해당 SNS에 대한 상세한 설명</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      <div class="col-md-8">
+        <div class="container" style="height: 20px;"></div>
+        <h2 class="featurette-heading fw-normal lh-1">수만휘 <a href="https://naver.me/xDYfn18w" target="_blank" class="text-muted">바로가기</a></h2>
+        <div class="container" style="height: 10px;"></div>
+        <p class="lead">수만휘는 '수능날 만점 시험지를 휘날리자' 라는 명칭의 약칭으로 2004년 2월 네이버 카페로 개설된 대다수의 수험생 커뮤니티이다. 
+          주로 수험생, 대학생, 자녀 입시에 관심이 많은 학부모, 입시생을 가르치는 선생님들이 가입하며 사실상 대학교 입시와 관련된 대부분의 사람들이 가입한다고 볼 수 있다. 
+          
+          <p class="lead">회원과 회원 간의 질의응답이 주로 이루어지며 입시생들의 대학 입결에 대한 질문이나 해당 대학 입학생들의 조언 혹은 의견 역시 자주 올라온다. 
+          이러한 점에서 대학 실 이용자들의 의견을 수용하기 적합하다 판단해 데이터 수집 대상이 되었다.</p>
+          </p>
+        </div>
+      <div class="col-md-4">
+        <img src="./image/manhi.jpg" align="right" class="bd-placeholder-img"  width="300" height="300" aria-hidden="true" alt="수만휘">
 
       </div>
     </div>
@@ -209,12 +243,18 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">수만휘 <a href="https://naver.me/xDYfn18w" class="text-muted">바로가기</a></h2>
-          <p class="lead">주요 사용자층과 같은 해당 SNS에 대한 상세한 설명</p>
+        <div class="col-md-8 order-md-2">
+          <div class="container" style="height: 20px;"></div>
+          <h2 class="featurette-heading fw-normal lh-1">디시인사이드 <a href="https://www.dcinside.com" target="_blank" class="text-muted">바로가기</a></h2>
+          <div class="container" style="height: 10px;"></div>
+          <p class="lead">디시인사이드는 종합 인터넷 커뮤니티 포털 사이트로 수많은 주제의 사이트가 개별적으로 운영되는 대규모 커뮤니티이다.
+            주로 20대가 많이 이용하며 익명성이 보장된다는 특징이 있어 가벼운 분위기가 많다. </p>
+          <p class="lead">자유롭게 게시글을 올릴 수 있고 이 게시글에 댓글과 공감 혹은 비공감을 누를 수 있는 구조로 대형 커뮤니티인 만큼 많은 게시글이 올라온다. 
+            표현에 가감이 없고 수집할 수 있는 데이터가 많은 만큼 이러한 점에서 데이터 수집 대상이 되었고 받은 데이터를 정제하여 사용하고 있다.</p>
         </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <div class="col-md-4 order-md-1">
+          <div class="container" style="height: 10px;"></div>
+          <img src="./image/dc.jpg" class="bd-placeholder-img"  width="300" height="300" aria-hidden="true" alt="디시인사이드">
   
         </div>
       </div>
@@ -225,7 +265,9 @@
 </main>
 
 <script src="pagelink.js"></script>
+<!-- <script src="server.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	
+<script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+<script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
 	</body>
 </html>
