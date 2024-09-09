@@ -98,15 +98,20 @@
         font-family: 'GowunBatang-Regular';
       }
 
+      .box {
+        font-family: 'GowunBatang-Regular';
+        text-align: center;
+      }
+
       .container-fluid{
         font-family: 'GowunDodum-Regular';
       }
 
-      .btn-secondary{
+      .btn-primary{
         font-family: 'GowunDodum-Regular';
       }
 
-    </style>
+      </style>
 
     
     <!-- Custom styles for this template -->
@@ -129,9 +134,6 @@
               <li class="nav-item">
                 <a class="nav-link" id="pagelinkPageLink" href="./pagelink.html">평가 대상 목록</a>
               </li>
-              <li class="nav-item"></li>
-	            <a class="nav-link" id="pagelinkPageLink" href="./data.html">평가 비교</a>
-	          </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   학교 평판 지수
@@ -162,41 +164,78 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-2.4 col-md-4">
-        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <div class="box">
         <img src="./image/tukorea.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="한국공대">
         <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">한국공학대학교</h2>
         <div class="container" style="height: 10px;"></div>
-        <p><a class="btn btn-secondary" href="https://www.tukorea.ac.kr/" style="background-color: #1758a8;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
+        <button type="button" class="btn btn-primary" style="background-color: #1758a8; border-color: #1758a8;"
+        onclick="window.open('https://www.tukorea.ac.kr/','_blank')">
+        학교 홈페이지로 이동&raquo;</button>
+        <br>
+        <div class="container" style="height: 5px;"></div>
+        <button type="button" class="btn btn-outline-primary" style="border-color: #1758a8; color: #1758a8;"
+        onclick="window.open('https://www.ma-pia.net/analysis/naver/?q=%ED%95%9C%EA%B5%AD%EA%B3%B5%EB%8C%80', '_blank')">
+        학교 평가 바로가기&raquo;</button>
+      </div>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="col-lg-2.4 col-md-4">
+        <div class="box">
         <img src="./image/syu.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="삼육대">
         <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">삼육대학교</h2>
         <div class="container" style="height: 10px;"></div>
-        <p><a class="btn btn-secondary" href="https://www.syu.ac.kr/" style="background-color: #002855;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
+        <button type="button" class="btn btn-primary" href="https://www.syu.ac.kr/" style="background-color: #002855; border-color:  #002855;" target="_blank">학교 홈페이지로 이동 &raquo;</button>
+        <br>
+        <div class="container" style="height: 5px;"></div>
+        <button type="button" class="btn btn-outline-primary" style="border-color:  #002855; color: #002855;"
+        onclick="window.open('https://www.ma-pia.net/analysis/naver/?q=%EC%82%BC%EC%9C%A1%EB%8C%80', '_blank')">
+        학교 평가 바로가기&raquo;</button>
+      </div>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="col-lg-2.4 col-md-4">
+        <div class="box">
         <img src="./image/suwon.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="수원대">
         <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">수원대학교</h2>
         <div class="container" style="height: 10px;"></div>
-        <p><a class="btn btn-secondary" href="https://www.suwon.ac.kr/" style="background-color: #deab1a;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
+        <button type="button" class="btn btn-primary" href="https://www.suwon.ac.kr/" style="background-color: #deab1a; border-color:  #deab1a;" target="_blank">학교 홈페이지로 이동 &raquo;</button>
+        <br>
+        <div class="container" style="height: 5px;"></div>
+        <button type="button" class="btn btn-outline-primary" style="border-color:  #deab1a; color:  #deab1a;"
+        onclick="window.open('https://www.ma-pia.net/analysis/naver/?q=%EC%88%98%EC%9B%90%EB%8C%80', '_blank')">
+        학교 평가 바로가기&raquo;</button>
+      </div>
+      <div class="container" style="height: 40px;"></div>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="container" style="height: 10px;"></div>
       <div class="col-lg-2.4 col-md-4">
+        <div class="box">
         <img src="./image/any.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="안양대">
         <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">안양대학교</h2>
         <div class="container" style="height: 10px;"></div>
-        <p><a class="btn btn-secondary" href="https://www.anyang.ac.kr/" style="background-color: #ffd200;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
+        <button type="button" class="btn btn-primary" href="https://www.anyang.ac.kr/" style="background-color: #ffd200; border-color:  #ffd200;" target="_blank">학교 홈페이지로 이동 &raquo;</button>
+        <br>
+        <div class="container" style="height: 5px;"></div>
+        <button type="button" class="btn btn-outline-primary" style="border-color:  #ffd200; color:  #ffd200;"
+        onclick="window.open('https://www.ma-pia.net/analysis/naver/?q=%EC%95%88%EC%96%91%EB%8C%80', '_blank')">
+        학교 평가 바로가기&raquo;</button>
+      </div>
       </div><!-- /.col-lg-2.4 col-md-4 -->
       <div class="col-lg-2.4 col-md-4">
+        <div class="box">
         <img src="./image/kit.png" class="bd-placeholder-img rounded-circle"  border-radius="70%" width="140" height="140" aria-hidden="true" alt="금오공대">
         <div class="container" style="height: 10px;"></div>
         <h2 class="fw-normal">금오공과대학교</h2>
         <div class="container" style="height: 10px;"></div>
-        <p><a class="btn btn-secondary" href="https://www.kumoh.ac.kr/" style="background-color: #00a9ce;" target="_blank">학교 홈페이지로 이동 &raquo;</a></p>
+        <button type="button" class="btn btn-primary" href="https://www.kumoh.ac.kr/" style="background-color: #00a9ce; border-color: #00a9ce; text-decoration-color: #00a9ce;" target="_blank">학교 홈페이지로 이동 &raquo;</button>
+        <br>
+        <div class="container" style="height: 5px;"></div>
+        <button type="button" class="btn btn-outline-primary" style="border-color: #00a9ce; color: #00a9ce;"
+        onclick="window.open('https://www.ma-pia.net/analysis/naver/?q=%EA%B8%88%EC%98%A4%EA%B3%B5%EB%8C%80', '_blank')">
+        학교 평가 바로가기&raquo;</button>  
+      </div>
       </div><!-- /.col-lg-2.4 col-md-4 -->
     </div><!-- /.row -->
 
@@ -235,7 +274,7 @@
           </p>
         </div>
       <div class="col-md-4">
-        <img src="./image/manhi.jpg" align="right" class="bd-placeholder-img"  width="300" height="300" aria-hidden="true" alt="수만휘">
+        <img src="./image/manhi.jpg" text-align="right" class="bd-placeholder-img"  width="300" height="300" aria-hidden="true" alt="수만휘">
 
       </div>
     </div>
